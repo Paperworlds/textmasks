@@ -1,0 +1,18 @@
+# editor / OS
+.DS_Store
+*.swp
+
+# claude local
+.claude/settings.local.json
+
+# memsearch index
+.memsearch/
+
+# python (once a CLI lands)
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+.pytest_cache/

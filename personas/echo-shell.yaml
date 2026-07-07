@@ -1,0 +1,10 @@
+# SPEC: persona — minimal shell-only persona for E2E smoke tests.
+description: "No-op persona for shell-only playbooks (no LLM turns)."
+allowed_tools:
+  - Bash(echo:*)
+  - Bash(date:*)
+  - Bash(true:*)
+disallowed_tools:
+  - Edit
+  - Write
+system_prompt: ""
