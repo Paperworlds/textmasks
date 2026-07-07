@@ -13,7 +13,7 @@ Registry, not runner — invocation lives in consumers (textprompts, textsession
 
 ## Commit rules (Paperworlds)
 - GPG-sign every commit (`git commit -S`). No `Co-Authored-By` lines.
-- Identity: `user.email = paolo@paradigm.co`.
+- Identity: **pdonorio** — `user.email = p.donorio.demeo@gmail.com`, signing key `9A8C9FAD376B5AF0`. This is a PUBLIC repo, so it uses the personal identity, NOT `paolo@paradigm.co` (that's for the monorepo/work repos only).
 - Prefix the subject with `[textmasks]`.
 - Update `CHANGELOG.md` under `## [Unreleased]` for anything notable.
 - Never commit secrets, `op://` paths, or credentials.
