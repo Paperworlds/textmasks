@@ -99,13 +99,18 @@ Sixteen personas, grouped by what they do:
 
 ## Status
 
-`0.1.0` — the persona **definitions + schema**. This is a data-first registry;
-there is no CLI yet by design (invocation lives in the consumers).
+`0.1.0` — the persona **definitions + schema**, plus schema-validation CI. This
+is a data-first registry with **no CLI, by design** — textmasks never runs
+personas; a consumer does. Schema conformance is enforced in CI
+(`scripts/validate_personas.py`).
+
+**Done**
+- `textprompts` retired; its embedded persona copy removed. textmasks is the
+  single source of truth.
 
 **Roadmap**
-- A thin `masks list / show / validate` CLI for authoring ergonomics (not a runner).
-- Cut `textprompts` over to depend on textmasks, then remove its embedded copy.
-- `textsessions` integration: launch or resume a session *as* a mask.
+- `textsessions` integration: launch or resume a session *as* a mask. This is
+  where invocation belongs — textmasks stays a registry, never a runner.
 
 ## License
 
