@@ -9,9 +9,9 @@ stem is the persona's canonical name.
 |---|---|---|
 | *(top comment)* | recommended | `# SPEC: <name> v<semver>` + a one-paragraph summary of the role and what seeded it. |
 | `description` | ✅ | One line. Shown in `list`. |
-| `mode` | ✅ | `task` — runs to completion on its own (produces a report/thread/artifact). `interactive` — emitted for a host session to adopt as its role. |
+| `mode` | recommended | `task` — runs to completion on its own (report/thread/artifact). `interactive` / `role` — emitted for a host session to adopt as its role. Minimal smoke personas may omit it. |
 | `model` | optional | Model hint, e.g. `haiku`, `sonnet`. Omit to let the consumer decide. |
-| `inputs` | ✅ | List of typed inputs (see below). May be empty (`[]`). |
+| `inputs` | optional | List of typed inputs (see below). Omit or `[]` when the persona takes none. |
 | `allowed_tools` | recommended | Least-privilege grant. Tool names, optionally scoped: `Bash(git diff:*)`. |
 | `disallowed_tools` | recommended | Explicit denials. A denial wins over an allow. |
 | `system_prompt` | ✅ | The role's instructions. Block scalar (`|`). |
